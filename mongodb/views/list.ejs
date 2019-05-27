@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List all meal</title>
+    </head>
+    <body>
+        <% data.forEach( item => { %>
+            <a href="/meals/<%= item._id %>"><%= item.name %> [ <%= item.price %> ks]</a><br/>
+        <% }); %>
+    </body>
+</html>

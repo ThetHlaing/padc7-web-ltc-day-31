@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update meal</title>
+    </head>
+    <body>
+        <form action="/meals/update/<%= data._id %>" method="POST">
+            Meals <input type="text" name="name" value="<%= data.name %>"><br/>
+            Price <input type="number" name ="price" value="<%= data.price %>"><br/>
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
